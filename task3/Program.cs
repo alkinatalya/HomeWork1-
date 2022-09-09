@@ -12,26 +12,12 @@ int Prompt(string message)
     return value;
 }
 int value = Prompt("Введите число >");
-if (value > 0)
-{
-    if(value % 2 == 1)
-{
-        System.Console.WriteLine($"{value} = нет");
-    }
-else
+ if (value % 2 == 0)
     {
         System.Console.WriteLine($"{value} = да");
-    }
-}
-else
-{
-    if (value % 2 == -1)
-    {
-        System.Console.WriteLine($"{value} = нет");
     }
     else
     {
-        System.Console.WriteLine($"{value} = да");
+        System.Console.WriteLine($"{value} = нет");
     }
-}
 
